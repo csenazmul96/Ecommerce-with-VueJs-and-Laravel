@@ -1,0 +1,643 @@
+@import 'variable';
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $primary_color;
+    font-size: 14px;
+    min-width: 1228px;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: 900;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+ ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.img_mx_width {
+    max-width: 100%;
+}
+
+.align_middle {
+    vertical-align: middle;
+}
+
+.align_top {
+    vertical-align: top!important;
+}
+
+.float_left {
+    float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+.text_left {
+    text-align: left!important;
+}
+
+.text_center {
+    text-align: center!important;
+}
+
+.text_right {
+    text-align: right!important;
+}
+
+.float_right {
+    float: right;
+}
+
+.center_text {
+    text-align: center;
+}
+
+.no_border {
+    border: 0!important;
+}
+
+.clearfix {
+    position: relative;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.list_desc {
+    list-style: disc;
+}
+
+.overflow_initial {
+    overflow: initial!important;
+}
+
+
+/*-------------------------
+    DISPLAY 
+-------------------------*/
+.d_none {
+    display: none !important;
+}
+.display_flex {
+    display: flex;
+}
+
+.display_inline {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.display_table {
+    display: table;
+    width: 100%;
+}
+
+.display_table>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.display_t_cell {
+    display: table-cell;
+}
+
+.display_t_cell_50 {
+    display: table-cell;
+    width: 50%;
+}
+
+
+/*-------------------------
+    PAGE TITLE
+-------------------------*/
+
+.main_title {
+    margin-bottom: 11px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.main_title h1 {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #16325c;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.inner_title {
+    border-top: 1px solid #16325c;
+    margin-bottom: 16px;
+    padding-top: 10px;
+    font-size: 16px;
+    color: #16325c;
+}
+
+.link {
+    color: #3c74e7;
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: #16325c;
+    text-decoration: underline;
+}
+
+.link:visited {
+    color: purple;
+    text-decoration: underline;
+}
+
+
+/*-------------------------
+    WIDTH CSS
+-------------------------*/
+
+.width_5p {
+    width: 5px;
+}
+
+.width_34p {
+    width: 34px!important;
+}
+
+.width_60p {
+    width: 60px!important;
+}
+
+.width_50p {
+    width: 50px!important;
+}
+
+.width_80p {
+    width: 80px!important;
+}
+
+.min_width_100p {
+    min-width: 100px!important;
+}
+
+.width_100p {
+    width: 100px!important;
+}
+
+.width_125p {
+    width: 125px!important;
+}
+
+.width_150p {
+    width: 150px!important;
+}
+
+.width_175p {
+    width: 175px!important;
+}
+
+.width_200p {
+    width: 200px!important;
+}
+
+.width_250p {
+    width: 250px!important;
+}
+
+.width_300p {
+    width: 300px!important;
+}
+
+.width_350p {
+    width: 350px!important;
+}
+
+.width_400p {
+    width: 400px!important;
+}
+
+.width_450p {
+    width: 450px!important;
+}
+
+.width_full {
+    width: 100%!important;
+}
+
+
+/*-------------------------
+    MARGIN CSS
+-------------------------*/
+
+.ma_5 {
+    margin: 5px!important;
+}
+
+.m10 {
+    margin: 10px 0px!important;
+}
+
+.m15 {
+    margin: 15px 0px!important;
+}
+
+.m30 {
+    margin: 30px 0px!important;
+}
+
+.mt_0 {
+    margin-top: 0!important;
+}
+
+.mt_15 {
+    margin-top: 15px!important;
+}
+
+.ml_0 {
+    margin-left: 0!important;
+}
+
+.ml_8 {
+    margin-left: 8px!important;
+}
+
+.ml_20 {
+    margin-left: 20px!important;
+}
+
+.mr_0 {
+    margin-right: 0!important;
+}
+
+.mr_8 {
+    margin-right: 8px!important;
+}
+
+.mr_15 {
+    margin-right: 15px!important;
+}
+
+.mr_20 {
+    margin-right: 20px!important;
+}
+
+.mr_50 {
+    margin-right: 50px!important;
+}
+
+.mb_0 {
+    margin-bottom: 0!important;
+}
+
+.mb_5 {
+    margin-bottom: 5px!important;
+}
+
+.mb_15 {
+    margin-bottom: 15px!important;
+}
+
+.mb_20 {
+    margin-bottom: 20px!important;
+}
+
+.mb_25 {
+    margin-bottom: 25px!important;
+}
+
+
+/*-------------------------
+    PADDING CSS
+-------------------------*/
+
+.p5 {
+    padding: 5px!important;
+}
+
+.pa15 {
+    padding: 15px!important;
+}
+
+.p15 {
+    padding: 15px 0px!important;
+}
+
+.p10 {
+    padding: 10px 0px!important;
+}
+
+.pa_0 {
+    padding: 0!important;
+}
+
+.p_0 {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.pr_0 {
+    padding-right: 0px!important;
+}
+
+.pt_0 {
+    padding-top: 0px!important;
+}
+
+.pl_0 {
+    padding-left: 0px!important;
+}
+
+.pr_0 {
+    padding-right: 0px!important;
+}
+
+.pb_0 {
+    padding-bottom: 0px!important;
+}
+
+.pr_8 {
+    padding-right: 8px!important;
+}
+
+.pl_15 {
+    padding-left: 15px!important;
+}
+
+.pl_30 {
+    padding-left: 30px!important;
+}
+
+.pr_15 {
+    padding-right: 15px!important;
+}
+
+.pr_30 {
+    padding-right: 30px!important;
+}
+
+.pl_60 {
+    padding-left: 60px!important;
+}
+
+.pr_60 {
+    padding-right: 60px!important;
+}
+
+.pt_5 {
+    padding-top: 5px!important;
+}
+
+.pt_15 {
+    padding-top: 15px!important;
+}
+
+
+/*-------------------------
+    FONT SIZE
+-------------------------*/
+
+.font_16p {
+    font-size: 16px!important;
+}
+
+.font_14p {
+    font-size: 14px!important;
+}
+
+.font_12p {
+    font-size: 12px!important;
+}
+
+
+/*-------------------------
+    FONT WEIGHT
+-------------------------*/
+
+.fw_500 {
+    font-weight: 500!important;
+}
+
+.fw_normal {
+    font-weight: normal!important;
+}
+
+.fw_bold {
+    font-weight: bold!important;
+}
+
+
+/*-------------------------
+    FONT STYLE
+-------------------------*/
+
+.font_italic {
+    font-style: italic!important;
+}

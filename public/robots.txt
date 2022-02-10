@@ -1,0 +1,4 @@
+Sitemap: https://shophologram.com/sitemap
+User-agent : *
+Disallow :  /cart
+Disallow :  /checkout

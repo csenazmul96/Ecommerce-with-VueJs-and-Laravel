@@ -1,0 +1,115 @@
+/* Outer */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.modal_overlay {
+    width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+    background: rgba(0,0,0,.3);
+}
+.modal.open_modal {
+    display: flex;
+}
+
+.modal .modal_inner {
+    position: relative;
+    z-index: 200;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 0;
+    overflow: auto;
+    -webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.modal_wrapper {
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.modal_1080p {
+    width: 1080px;
+}
+.modal_950p {
+    width: 950px;
+}
+.modal_850p {
+    width: 850px;
+}
+.modal_700p {
+    width: 700px;
+}
+.modal_600p {
+    width: 600px;
+}
+.modal_585p {
+    width: 585px;
+}
+.modal_500p {
+    width: 500px;
+}
+.modal_470p {
+    width: 470px;
+}
+.modal_380p {
+    width: 380px;
+}
+.modal_header {
+    display: table;
+    position: relative;
+    width: 100%;
+    background: #f1f4f9;
+    padding: 5px 10px;
+    border-bottom: 1px solid #999;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.modal_header_title {
+    font-size: 14px;
+    color: #16325c;
+    font-weight: 500;
+    display: table-cell;
+    vertical-align: middle;
+}
+.modal_content {
+    padding: 15px 0px;
+}
+.close_modal {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.close_modal::before, .close_modal::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+    height: 1px;
+}
+
+.close_modal::before {
+    transform: rotate(45deg);
+}
+.close_modal::after {
+    transform: rotate(-45deg);
+}
