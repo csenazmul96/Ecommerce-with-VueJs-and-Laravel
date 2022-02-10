@@ -1,0 +1,52 @@
+.pagination_wrapper {
+    display: table;
+    width: 100%;
+}
+
+.pagination_wrapper>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.pagination {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.pagination li div {
+    display: inline-block;
+}
+
+.pagination li input {
+    width: 40px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.pagination li .pagination_input {
+    margin-right: 8px;
+}
+
+.pagination li .pagination_btn button {
+    border-color: #16325c;
+    background: #fff;
+    color: #16325c;
+    &:hover {
+        background: rgba(22, 50, 92, .25);
+    }
+    &:disabled {
+        border-color: #999;
+        color: #999;
+        background: #fff;
+    }
+}
+
+.pagination li button {
+    padding: 4px 6px;
+}

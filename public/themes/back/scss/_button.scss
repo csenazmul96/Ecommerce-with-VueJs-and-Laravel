@@ -1,0 +1,115 @@
+.ly_btn {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    padding: 4px 15px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+        background: #16325c;
+        color: #fff;
+        transition: all .3s;
+    }
+    &:focus {
+        background: #16325c;
+        color: #fff;
+        outline: 0;
+        box-shadow: none;
+    }
+    &:disabled {
+        outline: 0;
+        box-shadow: none;
+        background: #d0d0d0!important;
+        border-color: #d0d0d0!important;
+        cursor: not-allowed;
+    }
+}
+
+.ly_btn.btn_blue,
+.btn_blue {
+    background: #3c74e7;
+    border-color: #3c74e7;
+    &:hover {
+        background: #16325c;
+        color: #fff;
+    }
+}
+
+.ly_btn.btn_transparent,
+.btn_transparent {
+    border-color: transparent;
+    background: #fff;
+    color: #3c74e7;
+    padding: 0;
+    text-decoration: underline;
+    font-weight: 400;
+    &:hover {
+        background: #fff;
+        color: #16325c;
+    }
+    &:focus {
+        background: #fff;
+        color: #16325c;
+    }
+}
+
+.ly_btn.btn_blue_hover,
+.btn_blue_hover {
+    border-color: #3c74e7;
+    background: #fff;
+    color: #3c74e7;
+    &:hover {
+        background: rgba(60, 116, 231, .25);
+    }
+    &:focus {
+        background: rgba(60, 116, 231, .25);
+    }
+}
+
+.ly_btn.btn_grey,
+.btn_grey {
+    background: #fff;
+    color: $border_color;
+    border: 1px solid $border_color;
+    &:hover {
+        background: rgba(153,153,153,.25);
+        color: $border_color;
+    }
+    &:focus{
+        background: rgba(153,153,153,.25);
+        color: $border_color;
+    }
+}
+
+.ly_btn.btn_danger,
+.btn_danger {
+    border-color: $color_red;
+    background: #fff;
+    color: $color_red;
+    &:hover {
+        background: rgba(206,68,84,.25);
+    }
+    &:focus {
+        background: rgba(206,68,84,.25);
+    }
+}
+
+
+.ly_btn.btn_paginate,
+.btn_paginate {
+    background: #16325c;
+    color: #fff;
+    &:hover {
+        background: #16325c;
+        color: #fff;
+    }
+    &:focus{
+        background: #16325c;
+        color: #fff;
+    }
+}

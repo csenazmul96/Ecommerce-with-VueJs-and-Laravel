@@ -1,0 +1,1 @@
+Follow this link for password reset <a href="{{ route('new_password_buyer', ['token' => $token, 'email' => urlencode($user->email)]) }}">{{ route('new_password_buyer', ['token' => $token, 'email' => urlencode($user->email)]) }}</a>

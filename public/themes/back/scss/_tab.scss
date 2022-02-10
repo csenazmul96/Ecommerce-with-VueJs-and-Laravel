@@ -1,0 +1,82 @@
+.tab_wrapper {}
+.ly_tab {}
+
+.tabs ul ,
+.tab_with_link > div{
+    display: table;
+    width: 100%;
+}
+.tab_with_link a,
+.tabs ul li {
+    display: table-cell;
+    padding: 8px 13px;
+    background: #e3e3e3;
+    border-color: #999;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    color: #999;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 500;
+}
+.tab_with_link a.active ,
+.tabs ul li.active {
+    position: relative;
+    background: #fff;
+    border-color: #999;
+    border-bottom: 1px solid #fff;
+    color: #333;
+    z-index: 3;
+}
+.tab_with_link a:last-child ,
+.tabs ul li:last-child {
+    border-right: 1px solid #999;
+}
+
+.tabs ul.tab_two li{
+    width: 50%;
+}
+.tabs ul.tab_three li{
+    width: 50%;
+}
+
+.tabs ul.tab_four li{
+    width: 25%;
+}
+.tabs ul.tab_six li{
+    width: 16.66%;
+}
+.tab_three a ,
+.tabs ul.tab_three li{
+    width: 33.33%;
+}
+.tab_content_wrapper {
+    width: 100%;
+    border: 1px solid #999;
+    border-top: 0;
+    padding: 16px;
+}
+
+
+
+.tab_content {
+    display: none;
+}
+.tab_content.show {
+    display: block;
+}
+.show .fadein {
+    animation: fadein 0.7s ease;
+  }
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  

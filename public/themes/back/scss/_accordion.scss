@@ -1,0 +1,122 @@
+.ly_accrodion {
+    margin-bottom: 16px;
+}
+
+.ly_accrodion_heading {
+    position: relative;
+    width: 100%;
+    background: #f1f4f9;
+    padding: 5px 10px;
+    border: 1px solid #999;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.ly_accrodion_title {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.ly_accrodion_title:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ly_accrodion_title.open_acc:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f106";
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 15px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.onleft_acc_arrow {
+    position: relative;
+    padding-left: 10px;
+}
+.onleft_acc_arrow.open_acc:after {
+    float: left !important;
+    content: "";
+    font-size: 30px;
+    width: 7px;
+    height: 1px;
+    background: #3c74e7;
+    position: absolute;
+    left: 0px;
+    top: 8px;
+}
+.onleft_acc_arrow:after {
+    float: left !important;
+    content: "+";
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    background: none;
+    color: #3c74e7;
+    font-weight: 300;
+}
+.onleft_acc_arrow:hover:before ,
+.onleft_acc_arrow.open_acc:hover:after {
+    background: #16325c;
+    color: #16325c;
+}
+.ly_accrodion_title span {
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    display: inline-block;
+}
+.right_arrow_accordion {
+    
+}
+.right_arrow_accordion_heading {
+    padding: 10px 0px;
+    border-top: 1px solid #999;
+    cursor: pointer;
+    position: relative;
+}
+.right_arrow_accordion_heading:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    right: 0!important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right_arrow_accordion_heading.open_acc:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f106";
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    right: 0!important;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right_arrow_accordion .accordion_body{
+    border: none;
+}
+.accordion_body {
+    position: relative;
+    background: #fff;
+    padding: 16px;
+    border: 1px solid #999;
+    border-top: 0;
+    display: none;
+}
